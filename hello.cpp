@@ -6,33 +6,24 @@ using namespace std;
 
 int main() 
 {
-    int choice;
-    cout << "Add Number" << endl;
-    cin >> choice;
-    
+    int counter = 0; 
+    int range, number, sum = 0;
 
-    switch (choice)
+
+    while (true)
     {
-    case 1:
-        cout << "one" << endl;
-        break;
+        cout << "Add Your Number: " << endl;
+        cin >> number;
 
-    case 2:
-        cout << "Two" << endl;
-        break;
+        sum = number + sum;
+        cout << sum << endl;
 
-    case 3:
-        cout << "three" << endl;
-        break;
+        if (sum == 100){
+            break;
+        }
 
-    case 4:
-        cout << "Four" << endl;
-        break;
-
-    default:
-        cout << "your number most < 5" << endl;
-        break;
     }
+    
 
     return 0;
 
