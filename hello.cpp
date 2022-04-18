@@ -13,17 +13,30 @@ int main()
     pointer PrintLN
     */
 
+    int n;
+    cout << "Size Of Array: " << endl;
+    cin >> n;
 
-    for (int i=0 ; i<=100 ; i++){
-        cout << "i-- "<<i << endl;
-        for(int j=0 ; j<= 50 ; j++){
-            cout << "j: " << j << endl;
-             
+    int numbers[n];
+    int sum;
 
-        }
+
+
+    cout << "Enter the Index For Array " << endl;
+    for (int i=0 ; i<n ; i++){
+        cin >> numbers[i];
+
+        sum = numbers[i] + sum;
+
     }
 
-    return 0;
 
+
+    cout << "Sum is : " << sum << endl;
+
+
+
+
+    return 0;
 
 }
