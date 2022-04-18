@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/apatec/cpp/learn/build",
+  "command": "/usr/bin/clang++   -g -o CMakeFiles/my_project.dir/my_project.cpp.o -c /home/apatec/cpp/learn/my_project.cpp",
+  "file": "/home/apatec/cpp/learn/my_project.cpp"
+}
+]
