@@ -6,27 +6,33 @@ using namespace std;
 
 int main() 
 {
+    int choice;
+    cout << "Add Number" << endl;
+    cin >> choice;
+    
 
-    string name, food;
-    int    age ; 
-    double money;
+    switch (choice)
+    {
+    case 1:
+        cout << "one" << endl;
+        break;
 
-    // Inputing
+    case 2:
+        cout << "Two" << endl;
+        break;
 
-    cout << "Add a Name: " << endl;
-    cin >> name;
-    cout << "Add a Age: " << endl;
-    cin >> age; 
-    cout << "Add a Food" << endl;
-    cin >> food;
-    cout << "Add Money: " << endl;
-    cin >> money;
+    case 3:
+        cout << "three" << endl;
+        break;
 
+    case 4:
+        cout << "Four" << endl;
+        break;
 
-    cout << name << " is " << age <<" yearls Old! "<< endl;
-    cout <<" He Likes "<< food << " a lot"<< endl;
-    cout << "he has " << money << " in his Card!"<< endl;     
-
+    default:
+        cout << "your number most < 5" << endl;
+        break;
+    }
 
     return 0;
 
