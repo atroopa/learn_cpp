@@ -6,24 +6,40 @@ using namespace std;
 
 int main() 
 {
-    int counter = 0; 
-    int range, number, sum = 0;
+
+    /*
+    tryning Project!
+    defined constexper
+    pointer PrintLN
+    */
+
+    bool flag = true; // When -1 Converted to False
+    int  number;      // user Put it 
+    int  sum  = 0;    // Catching
 
 
-    while (true)
-    {
-        cout << "Add Your Number: " << endl;
+    // While Loop ---------------------------------
+    while (flag == true){
+        cout << "Enter Your Number : " << endl;
         cin >> number;
 
-        sum = number + sum;
-        cout << sum << endl;
+        if (number == -1){
 
-        if (sum == 100){
+            flag == false;
             break;
+
+        }else{
+
+            sum = number + sum;
+
         }
 
     }
-    
+
+    // Show Result -------------------------------
+
+    cout << "Sum is " << sum << endl;
+
 
     return 0;
 
