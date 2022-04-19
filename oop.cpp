@@ -21,6 +21,42 @@ public:
 };
 
 
+class persion{
+
+private:
+    string name;
+    string nationality;
+    int    nationalCode;
+
+public:
+
+    void printInfo(){
+        cout << "name: "<< name << endl << "nationality :" << nationality << endl << "nationalCode : " << nationalCode << endl;
+    }
+
+    void setName(string name){
+        this->name = name;
+    }
+
+    void setNationality(string nationality){
+        this->nationality = nationality;
+    }
+
+    void setNationalCode(int nationalCode){
+        this->nationalCode = nationalCode;
+    }
+
+    string getName(){
+        return name;
+    }
+
+    int getNationalCode(){
+        return this-> nationalCode;
+    }
+
+};
+
+
 
 // definition
 void Student::avg(){
@@ -33,15 +69,14 @@ void Student::avg(){
 
 int main(){
 
-        // objects
-        Student ali;
-        ali.name   = "Ali";
-        ali.school = "Samari";
-        ali.score  = 12;
-        ali.id     = 124578;
-
-        ali.print_info();
-        ali.avg();
-
-        return 0;
+    // objects
+    persion p1;
+    
+    p1.setName("Jalal");
+    p1.setNationality("Afghan");
+    p1.setNationalCode(178956);
+    cout << p1.getName() << endl << p1.getNationalCode() << endl;
+    
+    
+    return 0;
 }
