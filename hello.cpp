@@ -13,28 +13,23 @@ int main()
     pointer PrintLN
     */
 
-    int n;
-    cout << "Size Of Array: " << endl;
-    cin >> n;
+    int arr[3][5] = {
+        {1,2,3,4,5},
+        {1,2,3,4,5},
+        {1,2,3,4,5}
+    };
 
-    int numbers[n];
-    int sum;
-
-
-
-    cout << "Enter the Index For Array " << endl;
-    for (int i=0 ; i<n ; i++){
-        cin >> numbers[i];
-
-        sum = numbers[i] + sum;
-
-    }
+    int row = sizeof(arr) / sizeof(arr[0]); // The Size Of 2d Array
+    int col = sizeof(arr[0]) / sizeof(arr[0][1]); // The Size of second D of Array
 
 
+    for (int i=0 ; i<row ; i++){
+        for (int j = 0; j < col; j++)
+        {
+            cout << "   " << arr[i][j];
+        }
 
-    cout << "Sum is : " << sum << endl;
-
-
+    } 
 
 
     return 0;
