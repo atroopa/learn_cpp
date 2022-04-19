@@ -2,10 +2,10 @@
 using namespace std;
 
 
-void print_info(string name)
+void print_info(string name, int age)
 {
 
-    cout << "My Name is " << name <<endl;
+    cout << "My Name is " << name << "My Age is " << age << endl;
 
 }
 
@@ -14,7 +14,7 @@ void print_info(string name)
 int main()
 {
 
-    print_info("Omid Hajavi");
+    print_info("Omid Hajavi", 29);
 
     return 0;
 }
